@@ -1,0 +1,64 @@
+EQ10Q LV2 Plugin
+-----------------
+
+EQ10Q is an audio plugin over the LV2 standard (http://lv2plug.in) implementing
+a powerfull and flexible parametric equalizer.
+Eq10q equalizer plugin includes a parametric equalization with diferent filter types 
+like peaking, HPF, LPF, Shelving and Notch
+with IIR algorithms and a nice GUI displaying the equalization curve.
+
+At the moment we have implemented second order biquadratic filters (Peaking, Low Shelving,
+High Shelving and Notch), and configurable order (1, 2, 3, 4) HPF and LPF filters.
+All with IIR algorithms. And a GUI writed with Gtkmm (http://www.gtkmm.org) to control 
+all the parameters and display the curve using plotmm (http://plotmm.sourceforge.net).
+The plugin is over LV2 standard and writed in C for the audio DSP and C++ for the GUI.
+
+EQ10Q is hosted at http://eq10q.sourceforge.net/
+Main developer: Pere Ràfols Soler (sapista2@gmail.com)
+
+Installation
+------------
+EQ10Q plugin will be installed into /usr/local/lib/lv2 as default.
+
+Before install EQ10Q you must resolve all required libraries:
+  - G++ compiler
+  - cmake
+  - pkg-config
+  - LV2 Headers
+  - Gtkmm >= 2.4
+  - FFTW3
+
+To install EQ10Q in your system open a terminal, go to EQ10Q top level folder and just type:
+ 
+  cmake ./
+
+If cmake configures successfully the build enviorment then type:
+
+  make
+
+If make finish successfully type the following as root
+
+  make install
+
+To run EQ10Q you need a LV2 host. I recomend Ardour (<= 2.8.3) http://ardour.org
+
+Uninstallation
+--------------
+Remove the EQ10Q directory, as default /usr/local/lib/lv2/sapistaEQv2.lv2
+
+
+Copyright
+---------
+
+ *   Copyright (C) 2009 by Pere Ràfols Soler                               *
+ *   sapista2@gmail.com                                                    *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.   

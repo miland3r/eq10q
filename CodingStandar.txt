@@ -1,0 +1,27 @@
+Coding standrd
+============================================
+Object declaration:
+	ObjectClassType FooObject;
+	
+Method declaration:
+	void thisIsMethod();
+	
+Data members of an object
+	int m_iDataMember;
+	float m_fDataNumber;
+	
+Pointer to standard type
+	int *ptr_iPointerToInterger;
+	float *ptr_fFoo;
+	
+Pointer to object
+	ObjectClassType *ptr_MyFooObjectPointer;
+	
+Pointer to data member
+	int *m_ptr_iIntegerPointer;
+	ObjectClassType *m_ptr_MyFooPointer;
+	
+
+TODO declaration:
+///TODO: Description
+	
